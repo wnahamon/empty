@@ -6,3 +6,12 @@
 - - -
 ещё сделаю сортировку по категории. 
 вот такие вот пироги
+- - -
+чтобы посмотреть на сайт нужно написать всё это по-очереди
+`git clone`
+`py -m venv .venv`
+`.\.venv\Scripts\activate`
+`pip install -r requarements.txt`
+`cd project`
+`py manage.py runserver`
+и ввести в поисковой строке 127.0.0.1:8000/main/home 
