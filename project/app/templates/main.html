@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="products">
+    <a href="{% url 'create' %}">Create</a>
+        <hr size="5" color="black" >
+        {% for product in products %}
+        <a href="{% url 'read' product.id %}" class='active-card'>
+            <div class="card">
+
+                <p>{{ product.title }}</p>
+                <p>{{ product.desc }}</p>
+                <p>{{ product.price }}</p>
+
+            </div>
+        </a>
+        <a href="{% url 'delete' product.id %}">DEL</a>
+        <a href="{% url 'update' product.id %}">upd</a>
+        <hr>
+        {% endfor %}
+    </div>
+</body>
+</html>
