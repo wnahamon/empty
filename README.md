@@ -4,14 +4,14 @@
 - смотреть товар
 - удалять товар
 - - -
-ещё сделаю сортировку по категории. 
+ещё сделаю сортировку по категории. <br>
 вот такие вот пироги
 - - -
 чтобы посмотреть на сайт нужно написать всё это по-очереди
-`git clone`
-`py -m venv .venv`
-`.\.venv\Scripts\activate`
-`pip install -r requarements.txt`
-`cd project`
-`py manage.py runserver`
+`git clone` <br>
+`py -m venv .venv` <br>
+`.\.venv\Scripts\activate` <br>
+`pip install -r requarements.txt` <br>
+`cd project` <br>
+`py manage.py runserver` <br>
 и ввести в поисковой строке 127.0.0.1:8000/main/home 
